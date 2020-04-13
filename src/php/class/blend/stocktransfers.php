@@ -5,7 +5,7 @@ class stocktransfers extends \Blend
 {
     public function __construct()
     {
-        $this->label = 'Stock Transfers';
+        $this->label = 'Transfers';
         $this->linetypes = ['stocktransfer'];
         $this->past = true;
         $this->cum = "sku";

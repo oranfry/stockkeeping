@@ -3,7 +3,7 @@ namespace blend;
 
 class skumeta extends \Blend
 {
-    public $label = 'SKU Meta';
+    public $label = 'SKUs';
     public $printable = true;
     public $linetypes = ['skumeta'];
 

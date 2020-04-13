@@ -5,7 +5,7 @@ class stockbalances extends \Blend
 {
     public function __construct()
     {
-        $this->label = 'Stock Balances';
+        $this->label = 'Balances';
         $this->linetypes = ['stocktransfer'];
         $this->showass = ['summaries'];
         $this->groupby = 'sku';
