@@ -1,5 +1,5 @@
 <?php
-namespace linetype;
+namespace stockkeeping\linetype;
 
 class skumeta extends \Linetype
 {

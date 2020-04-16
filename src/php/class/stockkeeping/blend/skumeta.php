@@ -1,5 +1,5 @@
 <?php
-namespace blend;
+namespace stockkeeping\blend;
 
 class skumeta extends \Blend
 {

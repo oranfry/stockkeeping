@@ -1,5 +1,5 @@
 <?php
-namespace linetype;
+namespace stockkeeping\linetype;
 
 class stocktransfer extends \Linetype
 {
