@@ -28,13 +28,6 @@ class stocktransfers extends \Blend
                 'type' => 'text',
             ],
             (object) [
-                'name' => 'parenttype',
-                'type' => 'icon',
-                'derived' => true,
-                'translate' => ['buy' => 'basket', 'demand' => 'demand', 'stocktake' => 'knifefork'],
-                'customlink' => '"/{$parenttype}/{$parentid}?back=' . base64_encode($_SERVER['REQUEST_URI']) . '"',
-            ],
-            (object) [
                 'name' => 'amount',
                 'type' => 'number',
                 'summary' => 'sum',
