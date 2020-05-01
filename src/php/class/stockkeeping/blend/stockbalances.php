@@ -11,6 +11,12 @@ class stockbalances extends \Blend
         $this->groupby = 'sku';
         $this->past = true;
         $this->cum = false;
+        $this->filters = [
+            (object) [
+                'field' => 'sku',
+                'value' => get_values('skumeta', 'sku', 'ontap is null'),
+            ],
+        ];
         $this->fields = [
             (object) [
                 'name' => 'date',

@@ -62,7 +62,7 @@ class stocktransfer extends \Linetype
     {
         $suggested_values = [];
 
-        $suggested_values['sku'] = get_values('stocktransfer', 'sku');
+        $suggested_values['sku'] = get_values('skumeta', 'sku');
 
         return $suggested_values;
     }
