@@ -58,11 +58,11 @@ class stocktransfer extends \Linetype
         ];
     }
 
-    public function get_suggested_values()
+    public function get_suggested_values($token)
     {
         $suggested_values = [];
 
-        $suggested_values['sku'] = get_values('skumeta', 'sku');
+        $suggested_values['sku'] = get_values($token, 'skumeta', 'sku');
 
         return $suggested_values;
     }
