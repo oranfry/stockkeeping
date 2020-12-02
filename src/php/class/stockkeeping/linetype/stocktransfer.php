@@ -50,11 +50,26 @@ class stocktransfer extends \Linetype
             ],
         ];
         $this->unfuse_fields = [
-            '{t}.date' => ':{t}_date',
-            '{t}.sku' => ':{t}_sku',
-            '{t}.amount' => ':{t}_amount',
-            '{t}.price' => ':{t}_price',
-            '{t}.sort' => ':{t}_sort',
+            '{t}.date' => (object) [
+                'expression' => ':{t}_date',
+                'type' => 'date',
+            ],
+            '{t}.sku' => (object) [
+                'expression' => ':{t}_sku',
+                'type' => 'varchar(40)',
+            ],
+            '{t}.amount' => (object) [
+                'expression' => ':{t}_amount',
+                'type' => 'int',
+            ],
+            '{t}.price' => (object) [
+                'expression' => ':{t}_price',
+                'type' => 'decimal(18,2)',
+            ],
+            '{t}.sort' => (object) [
+                'expression' => ':{t}_sort',
+                'type' => 'varchar(20)',
+            ],
         ];
     }
 

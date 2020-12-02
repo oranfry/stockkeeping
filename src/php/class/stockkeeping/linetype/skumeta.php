@@ -159,28 +159,94 @@ class skumeta extends \Linetype
             ],
        ];
         $this->unfuse_fields = [
-            '{t}.sku' => ':{t}_sku',
-            '{t}.title' => ':{t}_title',
-            '{t}.description' => ':{t}_description',
-            '{t}.value' => ':{t}_value',
-            '{t}.unit' => ':{t}_unit',
-            '{t}.shelflife' => ':{t}_shelflife',
-            '{t}.gramsperunit' => ':{t}_gramsperunit',
-            '{t}.ontap' => ':{t}_ontap',
-            '{t}.countfrequency' => ':{t}_countfrequency',
-            '{t}.buyfrequency' => ':{t}_buyfrequency',
-            '{t}.buyquantity' => ':{t}_buyquantity',
-            '{t}.buylocation' => ':{t}_buylocation',
-            '{t}.consumption' => ':{t}_consumption',
-            '{t}.consumptionperiod' => ':{t}_consumptionperiod',
-            '{t}.energy' => ':{t}_energy',
-            '{t}.protein' => ':{t}_protein',
-            '{t}.fattotal' => ':{t}_fattotal',
-            '{t}.fatsaturated' => ':{t}_fatsaturated',
-            '{t}.carbohydratetotal' => ':{t}_carbohydratetotal',
-            '{t}.carbohydratesugar' => ':{t}_carbohydratesugar',
-            '{t}.sodium' => ':{t}_sodium',
-            '{t}.potassium' => ':{t}_potassium',
+            '{t}.sku' => (object) [
+                'expression' => ':{t}_sku',
+                'type' => 'varchar(40)',
+            ],
+            '{t}.title' => (object) [
+                'expression' => ':{t}_title',
+                'type' => 'varchar(255)',
+            ],
+            '{t}.description' => (object)[
+                'expression' => ':{t}_description',
+                'type' => 'varchar(255)',
+            ],
+            '{t}.value' => (object) [
+                'expression' => ':{t}_value',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.unit' => (object) [
+                'expression' => ':{t}_unit',
+                'type' => 'varchar(20)',
+            ],
+            '{t}.shelflife' => (object) [
+                'expression' => ':{t}_shelflife',
+                'type' => 'int',
+            ],
+            '{t}.gramsperunit' => (object) [
+                'expression' => ':{t}_gramsperunit',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.ontap' => (object) [
+                'expression' => ':{t}_ontap',
+                'type' => 'tinyint',
+            ],
+            '{t}.countfrequency' => (object) [
+                'expression' => ':{t}_countfrequency',
+                'type' => 'varchar(10)',
+            ],
+            '{t}.buyfrequency' => (object) [
+                'expression' => ':{t}_buyfrequency',
+                'type' => 'varchar(10)',
+            ],
+            '{t}.buyquantity' => (object) [
+                'expression' => ':{t}_buyquantity',
+                'type' => 'int',
+            ],
+            '{t}.buylocation' => (object) [
+                'expression' => ':{t}_buylocation',
+                'type' => 'varchar(255)',
+            ],
+            '{t}.consumption' => (object) [
+                'expression' => ':{t}_consumption',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.consumptionperiod' => (object) [
+                'expression' => ':{t}_consumptionperiod',
+                'type' => 'varchar(10)',
+            ],
+            '{t}.energy' => (object) [
+                'expression' => ':{t}_energy',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.protein' => (object) [
+                'expression' => ':{t}_protein',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.fattotal' => (object) [
+                'expression' => ':{t}_fattotal',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.fatsaturated' => (object) [
+                'expression' => ':{t}_fatsaturated',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.carbohydratetotal' => (object) [
+                'expression' => ':{t}_carbohydratetotal',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.carbohydratesugar' => (object) [
+                'expression' => ':{t}_carbohydratesugar',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.sodium' => (object) [
+                'expression' => ':{t}_sodium',
+                'type' => 'decimal(32, 16)',
+            ],
+            '{t}.potassium' => (object) [
+                'expression' => ':{t}_potassium',
+                'type' => 'decimal(32, 16)',
+            ],
         ];
     }
 
