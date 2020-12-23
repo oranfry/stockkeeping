@@ -7,11 +7,6 @@ class stocktransfers extends \Blend
     {
         $this->label = 'Transfers';
         $this->linetypes = ['stocktransfer'];
-        $this->past = true;
-        $this->cum = "sku";
-        $this->showass = ['list', 'graph'];
-        $this->graphfield = 'amount';
-        $this->groupby = 'date';
         $this->fields = [
             (object) [
                 'name' => 'icon',
@@ -20,8 +15,6 @@ class stocktransfers extends \Blend
             (object) [
                 'name' => 'date',
                 'type' => 'date',
-                'groupable' => true,
-                'main' => true,
             ],
             (object) [
                 'name' => 'sku',
@@ -30,13 +23,10 @@ class stocktransfers extends \Blend
             (object) [
                 'name' => 'amount',
                 'type' => 'number',
-                'summary' => 'sum',
-                'summary_if' => 'sku',
             ],
             (object) [
                 'name' => 'sort',
                 'type' => 'text',
-                'sacrifice' => true,
             ],
         ];
     }
