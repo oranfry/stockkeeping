@@ -8,7 +8,7 @@ class skumeta extends \jars\Linetype
     {
         $this->table = 'skumeta';
 
-        $this->simple_strings('sku');
+        $this->simple_string('sku');
         $this->simple_string('title');
         $this->simple_string('description');
         $this->simple_float('value', 8);

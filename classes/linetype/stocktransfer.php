@@ -8,7 +8,8 @@ class stocktransfer extends \jars\Linetype
     {
         $this->table = 'stocktransfer';
 
-        $this->simple_strings('date', 'sku');
+        $this->simple_string('date');
+        $this->simple_string('sku');
         $this->simple_int('amount');
         $this->simple_float('price', 2);
         $this->simple_string('sort');
