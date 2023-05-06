@@ -4,6 +4,8 @@ namespace stockkeeping\linetype;
 
 class skumeta extends \jars\Linetype
 {
+    use \simplefields\traits\SimpleFields;
+
     public function __construct()
     {
         $this->table = 'skumeta';
@@ -32,7 +34,7 @@ class skumeta extends \jars\Linetype
         $this->simple_float('potassium', 8);
     }
 
-    public function validate($line)
+    public function validate($line): array
     {
         $errors = parent::validate($line);
 

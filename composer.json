@@ -1,9 +1,12 @@
 {
-    "name": "oranfry/stockkeeping",
-    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "stockkeeping\\": "classes"
         }
-    }
+    },
+    "name": "oranfry/stockkeeping",
+    "require": {
+        "oranfry/simple-fields": "*"
+    },
+    "version": "1.0.0"
 }
