@@ -30,4 +30,9 @@ abstract class stocktransfer extends \jars\Linetype
 
         return $errors;
     }
+
+    public function unpack($line, $oldline, $old_gstird_transactions)
+    {
+        $line->event = 'unchanged';
+    }
 }
