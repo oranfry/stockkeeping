@@ -18,6 +18,7 @@ class adjustmenttransfer extends stocktransfer
                 'linetype' => 'adjustment',
                 'tablelink' => 'adjustment_adjustmenttransfer',
                 'reverse' => true,
+                'orphanable' => true,
             ],
         ];
     }

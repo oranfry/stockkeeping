@@ -18,6 +18,7 @@ class consumptiontransfer extends stocktransfer
                 'linetype' => 'consumption',
                 'tablelink' => 'consumption_consumptiontransfer',
                 'reverse' => true,
+                'orphanable' => true,
             ],
         ];
     }

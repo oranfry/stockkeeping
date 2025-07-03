@@ -18,6 +18,7 @@ class disposaltransfer extends stocktransfer
                 'linetype' => 'disposal',
                 'tablelink' => 'disposal_disposaltransfer',
                 'reverse' => true,
+                'orphanable' => true,
             ],
         ];
     }

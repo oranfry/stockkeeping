@@ -20,6 +20,7 @@ class purchasetransfer extends stocktransfer
                 'linetype' => 'purchase',
                 'tablelink' => 'purchase_purchasetransfer',
                 'reverse' => true,
+                'orphanable' => true,
             ],
         ];
     }
