@@ -18,6 +18,7 @@ class consumption extends event
                 'linetype' => 'consumptiontransfer',
                 'tablelink' => 'consumption_consumptiontransfer',
                 'only_parent' => 'event_id',
+                'cascade_delete' => true,
             ],
         ];
     }

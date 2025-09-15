@@ -18,6 +18,7 @@ class adjustment extends event
                 'linetype' => 'adjustmenttransfer',
                 'tablelink' => 'adjustment_adjustmenttransfer',
                 'only_parent' => 'event_id',
+                'cascade_delete' => true,
             ],
         ];
     }

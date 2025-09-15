@@ -21,6 +21,7 @@ class purchase extends event
                 'linetype' => 'purchasetransfer',
                 'tablelink' => 'purchase_purchasetransfer',
                 'only_parent' => 'event_id',
+                'cascade_delete' => true,
             ],
         ];
     }

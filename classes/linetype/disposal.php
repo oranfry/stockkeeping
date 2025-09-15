@@ -18,6 +18,7 @@ class disposal extends event
                 'linetype' => 'disposaltransfer',
                 'tablelink' => 'disposal_disposaltransfer',
                 'only_parent' => 'event_id',
+                'cascade_delete' => true,
             ],
         ];
     }
