@@ -7,7 +7,7 @@ class stockopenings extends \jars\Report
     public function __construct()
     {
         $this->listen = ['report:stockdelta'];
-        $this->classify = fn ($groupname) => ['months'];
+        $this->classify = fn ($groupname) => ['dates'];
     }
 
     public function handle($data, $report, string $change_reportname, string $change_groupname): array
