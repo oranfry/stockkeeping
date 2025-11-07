@@ -13,7 +13,7 @@ class purchase extends event
         $this->table = 'stockevent_purchase';
 
         $this->simple_string('shop');
-        $this->borrow['comment'] = fn ($line): string => $line->shop;
+        $this->borrow['comment'] = fn ($line): ?string => $line->shop;
 
         $this->children = [
             (object) [
