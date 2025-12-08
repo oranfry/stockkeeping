@@ -15,18 +15,16 @@ class stockopenings extends \jars\Report
         $data = (object) ($data ?? []);
         $report = (array) ($report ?? []);
 
-        foreach (get_object_vars($data) as $sku => $amount) {
-            if (!$amount === null) {
-                unset($report[$change_groupname]->$sku);
-            } else {
-                if (!isset($report[$change_groupname])) {
-                    $report[$change_groupname] = (object) [];
-                }
+        unset($report[$change_groupname]);
 
-                $report[$change_groupname]->$sku = (object) [
-                    'delta' => $amount,
-                ];
+        foreach (get_object_vars($data) as $sku => $amount) {
+            if (!isset($report[$change_groupname])) {
+                $report[$change_groupname] = (object) [];
             }
+
+            $report[$change_groupname]->$sku = (object) [
+                'delta' => $amount,
+            ];
         }
 
         ksort($report);
