@@ -1,10 +1,10 @@
 <?php
 
-namespace stockkeeping\linetype;
+namespace OranFry\StockKeeping\Linetype;
 
-class adjustmenttransfer extends stocktransfer
+class AdjustmentTransfer extends StockTransfer
 {
-    use \simplefields\traits\SimpleFields;
+    use \OranFry\SimpleFields\Traits\SimpleFields;
 
     public function __construct()
     {

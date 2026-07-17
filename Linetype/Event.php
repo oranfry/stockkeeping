@@ -1,10 +1,10 @@
 <?php
 
-namespace stockkeeping\linetype;
+namespace OranFry\StockKeeping\Linetype;
 
-class event extends \jars\Linetype
+class Event extends \OranFry\Jars\Core\Linetype
 {
-    use \simplefields\traits\SimpleFields;
+    use \OranFry\SimpleFields\Traits\SimpleFields;
 
     public function __construct()
     {

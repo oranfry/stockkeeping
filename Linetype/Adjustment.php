@@ -1,22 +1,22 @@
 <?php
 
-namespace stockkeeping\linetype;
+namespace OranFry\StockKeeping\Linetype;
 
-class consumption extends event
+class Adjustment extends Event
 {
-    use \simplefields\traits\SimpleFields;
+    use \OranFry\SimpleFields\Traits\SimpleFields;
 
     public function __construct()
     {
         parent::__construct();
 
-        $this->table = 'stockevent_consumption';
+        $this->table = 'stockevent_adjustment';
 
         $this->children = [
             (object) [
                 'property' => 'transfers',
-                'linetype' => 'consumptiontransfer',
-                'tablelink' => 'consumption_consumptiontransfer',
+                'linetype' => 'adjustmenttransfer',
+                'tablelink' => 'adjustment_adjustmenttransfer',
                 'only_parent' => 'event_id',
                 'cascade_delete' => true,
             ],

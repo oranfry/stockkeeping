@@ -1,8 +1,8 @@
 <?php
 
-namespace stockkeeping\report;
+namespace OranFry\StockKeeping\Report;
 
-class stockopenings extends \jars\Report
+class StockOpenings extends \OranFry\Jars\Core\Report
 {
     public function __construct()
     {

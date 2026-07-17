@@ -1,8 +1,8 @@
 <?php
 
-namespace stockkeeping\report;
+namespace OranFry\StockKeeping\Report;
 
-class stockadjustment extends stock
+class StockAdjustment extends Stock
 {
     function __construct()
     {

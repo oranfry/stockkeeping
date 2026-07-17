@@ -1,8 +1,8 @@
 <?php
 
-namespace stockkeeping\report;
+namespace OranFry\StockKeeping\Report;
 
-class skumetas extends \jars\Report
+class SkuMetas extends \OranFry\Jars\Core\Report
 {
     function __construct()
     {

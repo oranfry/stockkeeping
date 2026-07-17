@@ -1,2 +1,2 @@
 # stockkeeping
-Stock Keeping Package for Blends
+Stock Keeping Package for Jars

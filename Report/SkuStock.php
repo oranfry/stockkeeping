@@ -1,8 +1,8 @@
 <?php
 
-namespace stockkeeping\report;
+namespace OranFry\StockKeeping\Report;
 
-class skustock extends \jars\Report
+class SkuStock extends \OranFry\Jars\Core\Report
 {
     function __construct()
     {
