@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\StockKeeping\Linetype;
+namespace OranFry\StockKeeping\Linetypes;
 
 class SkuMeta extends \OranFry\Jars\Core\Linetype
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\StockKeeping\Linetype;
+namespace OranFry\StockKeeping\Linetypes;
 
 class Purchase extends Event
 {

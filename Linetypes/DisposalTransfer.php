@@ -1,8 +1,8 @@
 <?php
 
-namespace OranFry\StockKeeping\Linetype;
+namespace OranFry\StockKeeping\Linetypes;
 
-class PurchaseTransfer extends StockTransfer
+class DisposalTransfer extends StockTransfer
 {
     use \OranFry\SimpleFields\Traits\SimpleFields;
 
@@ -10,15 +10,13 @@ class PurchaseTransfer extends StockTransfer
     {
         parent::__construct();
 
-        $this->table = 'stocktransfer_purchase';
-
-        $this->simple_number('price', 2);
+        $this->table = 'stocktransfer_disposal';
 
         $this->inlinelinks = [
             (object) [
                 'property' => 'event',
-                'linetype' => 'purchase',
-                'tablelink' => 'purchase_purchasetransfer',
+                'linetype' => 'disposal',
+                'tablelink' => 'disposal_disposaltransfer',
                 'reverse' => true,
                 'orphanable' => true,
             ],

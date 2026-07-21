@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\StockKeeping\Linetype;
+namespace OranFry\StockKeeping\Linetypes;
 
 abstract class StockTransfer extends \OranFry\Jars\Core\Linetype
 {

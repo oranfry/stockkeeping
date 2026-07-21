@@ -1,6 +1,6 @@
 <?php
 
-namespace OranFry\StockKeeping\Report;
+namespace OranFry\StockKeeping\Reports;
 
 class SkuStock extends \OranFry\Jars\Core\Report
 {
