@@ -23,6 +23,7 @@ class SkuMeta extends \OranFry\Jars\Core\Linetype
         $this->simple_string('buylocation');
         $this->simple_float('consumption', 16);
         $this->simple_string('consumptionperiod');
+        $this->simple_float('price', 16);
     }
 
     public function validate($line): array
