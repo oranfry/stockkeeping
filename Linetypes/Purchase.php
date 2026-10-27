@@ -14,7 +14,7 @@ class Purchase extends Event
 
         $this->simple_string('shop');
         $this->simple_string('category');
-        $this->borrow['comment'] = fn ($line): string => implode(' - ' . array_filter([$line->shop ?? '', $line->category ?? '']));
+        $this->borrow['comment'] = fn ($line): string => implode(' - ', array_filter([$line->shop ?? '', $line->category ?? '']));
 
         $this->children = [
             (object) [
